@@ -1,0 +1,47 @@
+{% load static %}
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        body{
+            text-align: center;
+            background-color: black;
+        }
+        h1{
+            color: red;
+            font-size: 2em;
+            margin: 20px;
+            font-weight: bold;
+        }
+        textarea{
+                 color: red;
+                 width: 600px;
+                height: 300px;
+                margin: 10px;
+             }
+        
+    </style>
+</head>
+
+<body  vlink="white" alink="red">
+<h1>wordcount</h1>
+<a>deathnote</a>
+<br>
+
+<div id = "about">
+<a href="{%url 'about'%}" >About</a>
+</div>
+
+<form action="{%url 'count'%}">
+<form action="">
+    <textarea cols="100" row="200" name="fulltext">
+    </textarea>
+    <br>
+    <input type="submit" value="COUNT"/><br>
+    <img src="http://bitly.kr/gkcnSs">
+</form>
+</form>
+</body>
+</html>
