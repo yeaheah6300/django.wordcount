@@ -24,7 +24,7 @@
 <h1>입력한 전체 텍스트</h1>
 {{fulltext}}
 <br><br>
-<a href="{% url 'home'%}">다시하기</a>
+<a href="{% url 'index'%}">다시하기</a>
 <h1>단어가 나온 횟수</h1>
 {% for word, countTotal in dictionary %}
 {{word}}-{{countTotal}}
